@@ -1,12 +1,8 @@
 import numpy as np
 import pandas as pd
 import os
-from PIL import Image, ImageFilter, ImageDraw, ImageChops
-import matplotlib.pyplot as plt
-import xml.etree.ElementTree as ET
-from collections import defaultdict
+from PIL import Image
 import copy
-import cv2
 from joblib import Parallel, delayed
 from tqdm import tqdm
 import pickle
@@ -14,7 +10,6 @@ import os.path
 
 import torch
 import torch.nn as nn
-from collections import OrderedDict
 from torch.utils import data
 import torch.optim as optim
 import torch.nn.functional as F
@@ -23,7 +18,6 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Sampler
 
 from collections import Counter
-from datetime import datetime, timezone, timedelta
 
 from model import SimpleNet, se_resnet18, se_resnet50, se_resnet101, densenet121, densenet169, densenet201, dpn92, dpn131, dpn98, __all__
 from dataset import *
