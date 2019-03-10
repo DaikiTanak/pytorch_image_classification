@@ -18,21 +18,21 @@ Python                             3.7.0
 
 ## Files
 ### Preprocess images
-`utils.py` : 画像が格納されているフォルダから画像を読み、リサイズしてデータのpickleを作成する。
+`utils.py` : Read images from the specified directory , resize them and pickle them.
 
 ### Train model
-`train.py` : モデル訓練の主要部。モデルインスタンス作成、データローダー作成、モデル訓練を行う。
+`train.py` : The main part of training model. Make model instance and dataloaders, and then train model.
 
-- `dataset.py` : 訓練や推論に用いるDataset、Data Augmentationに使う各種クラス。
+- `dataset.py` : Dataset class for training and evaluation and classes for Data Augmentation.
 
-- `model.py` : 分類器。ResNet、DenseNet、DualPathNetworks
+- `model.py` : Image classifier. ResNet、DenseNet、DualPathNetworks
 
 
 ### Evaluate model
-`test.py` : pickleしたテストデータを使って性能を評価する。
+`test.py` : Evaluate model performance using pickled tst dataset.
 
 ### Infer images
-`infer.py` : 画像へのパス、モデルへのパスを指定して推論を行う関数
+`infer.py` : Evaluate model (path to model and path to images are needed)
 
 
 ### Utils 
